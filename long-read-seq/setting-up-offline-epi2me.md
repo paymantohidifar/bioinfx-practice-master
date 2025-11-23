@@ -84,7 +84,7 @@ Since Nextflow depends on Java to operate, we'll begin by installing Java. The p
 **Bash:**
 ```bash
 # Install SDKMAN
-curl -s [https://get.sdkman.io](https://get.sdkman.io) | bash
+curl -s https://get.sdkman.io | bash
 # List available Java flavors and versions
 sdk list java
 # Install most recent Java JRE Temurin (required by Nextflow) and make it as your default Java:
@@ -100,7 +100,7 @@ Nextflow is the workflow manager utilized by EPI2ME to automate their workflows.
 **Bash:**
 ```bash
 # Install Nextflow (download and place in PATH)
-wget -qO- [https://get.nextflow.io](https://get.nextflow.io) | bash
+wget -qO- https://get.nextflow.io | bash
 sudo mv nextflow /usr/local/bin/
 # Verify installation
 nextflow info
@@ -121,7 +121,7 @@ sudo apt-get update
 sudo apt install -y libssl-dev uuid-dev libgpgme-dev squashfs-tools libseccomp-dev libsubid-dev libfuse3-dev libsubid-dev
 
 # Install latest stable Go release (find the package at [https://go.dev/dl/](https://go.dev/dl/))
-wget [https://go.dev/dl/go1.25.4.linux-amd64.tar.gz](https://go.dev/dl/go1.25.4.linux-amd64.tar.gz)
+wget https://go.dev/dl/go1.25.4.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.25.4.linux-amd64.tar.gz
 
 # Configure PATH for Go
@@ -133,7 +133,7 @@ go version
 
 # Download and Compile Apptainer
 cd /tmp
-git clone [https://github.com/apptainer/apptainer.git](https://github.com/apptainer/apptainer.git)
+git clone https://github.com/apptainer/apptainer.git
 cd apptainer
 ./mconfig
 make -C builddir
@@ -539,13 +539,11 @@ If you plan to use a GPU, install the toolkit (including `nvidia-container-cli`)
 ```bash
 # Follow the official NVIDIA steps for adding the repository and installing the toolkit
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
-curl -fsSL [https://nvidia.github.io/libnvidia-container/gpgkey](https://nvidia.github.io/libnvidia-container/gpgkey) | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
+curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
 sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list <<EOF
-deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] [https://nvidia.github.io/libnvidia-container/$distribution/](https://nvidia.github.io/libnvidia-container/$distribution/) /
-EOF
+deb signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg https://nvidia.github.io/libnvidia-container/$distribution/EOF
 sudo apt update
 sudo apt install -y nvidia-container-toolkit
 ```
 
 After completing these steps, refer to the official documentation for detailed instructions on installing and configuring the toolkit to ensure seamless GPU access for your containers and workflows.
-        
