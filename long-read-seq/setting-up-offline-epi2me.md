@@ -168,7 +168,7 @@ When you use the `nextflow pull` command to retrieve a workflow, NextFlow automa
 echo "export NXF_ASSETS='/home/epi2me/nf_workflows'" >> ~/.bashrc 
 ```
 
-**APPTAINER_CACHEDIR and APPTAINER_DISABLE_CACHE**
+**APPTAINER_CACHEDIR** and **APPTAINER_DISABLE_CACHE**:
 To prevent Apptainer from downloading cache files when using the pull command to download SIF files (see below), configure the following two environment variables in your `~/.bashrc` file:
 
 **Bash:**
