@@ -488,6 +488,7 @@ rm -rf $(pwd)/../logs/*
 ---
 
 ## Phase 3: Exporting and Importing for Offline Machine
+After successful completion of above steps, it is now time to export your WSL 2 instance into a portable disk or drive and import it to your offline machine by following the below steps.
 
 ### Step 1: Exporting the WSL Instance
 
