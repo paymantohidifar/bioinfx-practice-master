@@ -34,8 +34,6 @@ A Nextflow script is composed of one or more `process` blocks and a `workflow` b
 
 ---
 
-Here is a summary of Part 2 of the Nextflow training, focusing on running real-world pipelines.
-
 ## Part 2: Running Nextflow Pipelines
 
 ### Processing Multiple Inputs Efficiently
