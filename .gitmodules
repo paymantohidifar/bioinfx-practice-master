@@ -1,3 +1,6 @@
 [submodule "nextflow-practice"]
 	path = nextflow-practice
 	url = git@github.com:paymantohidifar/nextflow-practice.git
+[submodule "long-read-seq-practice"]
+	path = long-read-seq-practice
+	url = git@github.com:paymantohidifar/long-read-seq-practice.git
