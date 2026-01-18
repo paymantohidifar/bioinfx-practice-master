@@ -4,3 +4,6 @@
 [submodule "long-read-seq-practice"]
 	path = long-read-seq-practice
 	url = git@github.com:paymantohidifar/long-read-seq-practice.git
+[submodule "bioinfx-data-skills-book"]
+	path = bioinfx-data-skills-book
+	url = git@github.com:paymantohidifar/bioinfx-data-skills-book.git
