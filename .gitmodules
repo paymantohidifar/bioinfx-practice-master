@@ -1,0 +1,3 @@
+[submodule "nextflow-practice"]
+	path = nextflow-practice
+	url = git@github.com:paymantohidifar/nextflow-practice.git
