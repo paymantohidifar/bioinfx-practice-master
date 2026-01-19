@@ -7,3 +7,6 @@
 [submodule "bioinfx-data-skills-book"]
 	path = bioinfx-data-skills-book
 	url = git@github.com:paymantohidifar/bioinfx-data-skills-book.git
+[submodule "deep-learning-for-biology-book"]
+	path = deep-learning-for-biology-book
+	url = git@github.com:paymantohidifar/deep-learning-for-biology-book.git
